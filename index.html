@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- ALWAYS INCLUDE THE LINE BELOW FOR RESPONSIVE DESIGN -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS\general.css" />
+    <link rel="stylesheet" href="CSS\style.css" />
+    <link rel="stylesheet" href="CSS\queries.css" />
+    <title>BESPOKEIT</title>
+    <!-- For using Material Design for Web in prototyping phase only! -->
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <a>
+        <img class="logo" alt="BespokeIT logo" src="Images\LV-F.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#value">We provide</a></li>
+          <li>
+            <a class="main-nav-link" href="#services">Services</a>
+          </li>
+          <li><a class="main-nav-link" href="#">About us</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="register.html"
+              >Get in Touch</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero container">
+        <div class="grid grid--2-cols">
+          <div class="section-hero__slogan">
+            <h1 class="heading-primary">
+              <p>Bef<s class="text-green">IT</s>ting</p>
+              <p>every</p>
+              ocassion!
+            </h1>
+            <div class="section-hero__description">
+              We deliver reliable IT solutions tailormade to your business needs
+              – at a shortest time possible and at reasonable cost.
+            </div>
+            <a class="main-nav-link nav-cta" href="register.html"
+              >Get in Touch</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- SECTION FEATURES -->
+      <section class="section-features">
+        <h2 id="value" class="heading-secondary container section-heading">
+          What you get with us?
+        </h2>
+        <div class="section-features__content row-dark">
+          <div class="container">
+            <div class="subheading">Domain knowledge</div>
+            <div class="grid grid--2-cols">
+              <div class="section-feature__description">
+                <h3 class="heading-tertiary text-italic">
+                  "The only source of knowledge<br />
+                  is experience."
+                  <p class="quote">Albert Einstain</p>
+                </h3>
+
+                <p class="description-text">
+                  AI makes coding possible even with the minimal technical
+                  know-how. Understanding the business using it, is what makes
+                  all the difference.
+                </p>
+                <p class="description-text text-point">
+                  For the last 30 years we have been gathering real-life
+                  experience in applying the most advanced IT solutions in
+                  almost every industry there is. With us you get an
+                  unparalleled expertise necessary for practical solutions.
+                </p>
+              </div>
+              <div class="section-feature__img">
+                <img src="Images\Lighthouse.jpg" alt="Lighthouse" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-features__content row-light">
+          <div class="container">
+            <div class="subheading">Technical expertise</div>
+            <div class="section-features__row grid grid--2-cols">
+              <div class="section-feature__img">
+                <img src="Images\Efficiency.jpg" alt="Electricity flowing" />
+              </div>
+              <div class="section-feature__description">
+                <h3 class="heading-tertiary">
+                  "An expert is a person who<br />
+                  has few new ideas."
+                  <p class="quote">Albert Einstain</p>
+                </h3>
+                <p class="description-text">
+                  It is also a person that made all the mistakes one can make,
+                  in a very narrow field of its expertise. Creating one takes
+                  time and costs a lot!
+                </p>
+                <p class="description-text text-point">
+                  Experts are our second largest asset. From software
+                  development (mobile, web, desktop or specialized) to IT
+                  environment (network, infrastructure and administration) you
+                  name it, we have it!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-features__content row-dark">
+          <div class="container">
+            <div class="subheading">Agility</div>
+            <div class="grid grid--2-cols">
+              <div class="section-feature__description">
+                <h3 class="heading-tertiary">
+                  "… the ability to balance<br />flexibility and stability."
+                  <p class="quote">Jim Highsmith</p>
+                </h3>
+                <p class="description-text">
+                  Timely reaction, with adequate resources and in the right
+                  direction is the ability no modern organization can do without
+                  these days.
+                </p>
+                <p class="description-text text-point">
+                  Can you mitigate all eventualities without breaking the bank?
+                  With us you can! We use economy of scale and are able to keep
+                  all of the resources on call, utilizing them efficiently, so
+                  that you can afford them when necessary.
+                </p>
+              </div>
+              <div class="section-feature__img">
+                <img src="Images\Lighthouse.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION SERVICES -->
+      <section class="section-services">
+        <h2 id="services" class="heading-secondary container">What we do?</h2>
+        <div class="section-content container">
+          <div class="grid grid--3-cols">
+            <div class="services-container">
+              <div class="service-title">
+                <p class="subheading">Outsourcing</p>
+                <p class="service-slogan">
+                  Optimizing operations to save time & money?
+                </p>
+                <p class="description-text text-point">
+                  We have resources and technical knowledge to organize
+                  cost-effective outsourcing in shortest possible time. Whatever
+                  your specific need, our service will be tailored to you.
+                </p>
+              </div>
+              <div class="plan-sign-up">
+                <a class="main-nav-link nav-cta" href="register.html"
+                  >Get in Touch</a
+                >
+              </div>
+            </div>
+            <div class="services-container">
+              <div class="service-title">
+                <p class="subheading">Solving</p>
+                <p class="service-slogan">
+                  Need a team of specialists to solve an issue?
+                </p>
+                <p class="description-text text-point">
+                  Whether you need a full team to tackle an issue, or you just
+                  want a part of the work to be handled outside for efficiency,
+                  we can tailor our services to fit you like a glove.
+                </p>
+              </div>
+              <div class="plan-sign-up">
+                <a class="main-nav-link nav-cta" href="register.html"
+                  >Get in Touch</a
+                >
+              </div>
+            </div>
+            <div class="services-container">
+              <div class="service-title">
+                <p class="subheading">Developing</p>
+                <p class="service-slogan">
+                  Need help to deliver your briliant idea to the world?
+                </p>
+                <p class="description-text text-point">
+                  Starting new or scaling existing product/service, experience
+                  of your team can make or break your business. That's why you
+                  never send a boy to do a man’s job.
+                </p>
+              </div>
+              <div class="plan-sign-up">
+                <a class="main-nav-link nav-cta" href="register.html"
+                  >Get in Touch</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION ABOUT US -->
+      <section class="section-aboutus">
+        <h2 id="aboutus" class="heading-secondary container">Who are we?</h2>
+        <div class="container">
+          <div class="grid grid--2-cols">
+            <div>
+              <h3 class="heading-tertiary">Our Mission</h3>
+              <p class="description-text">
+                Providing the most cost-effective service to our clients by
+                combining domain & technical knowledge with the economy of scale
+                - wrapping it up into a tailor-made BespokeIT™ approach.
+              </p>
+            </div>
+            <div>
+              <h3 class="heading-tertiary">Our Vision</h3>
+              <p class="description-text">
+                Becoming the go-to place for tailored IT services – setting a
+                standard for the IT industry in terms of reliability,
+                cost-effectiveness, quality and personalization - because we
+                know that one size never fits all.
+              </p>
+            </div>
+            <div>
+              <h3 class="heading-tertiary">Team</h3>
+              <p class="description-text">
+                Group of experienced business owners and entrepreneurs with vast
+                experience in applying state of the art IT solutions in variety
+                of areas – from finance and fintech to health and
+                machine-learning LLMs.
+              </p>
+            </div>
+            <div>Fotke</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SECTION FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid--2-3">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="BespokeIT logo" src="Images\LV-F.png" />
+            </a>
+            <address class="contacts">
+              <p class="address">35 Ballards Lane<br />London, N3 1XW</p>
+            </address>
+            <p class="copyright">
+              Copyright &copy; 2024 by OPHLABS LTD<br />
+              All rights reserved.
+            </p>
+          </div>
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="mailto:hello@bespokeit.tech">
+                  hello@bespokeit.tech</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#"> LinkedIn</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">X/@BespokeIT</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="nav-col">
+            <p class="footer-heading">We provide</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Know-how</a></li>
+              <li><a class="footer-link" href="#">Expertise</a></li>
+              <li><a class="footer-link" href="#">Agility</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Services</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Outsourcing</a></li>
+              <li><a class="footer-link" href="#">Troubleshooting</a></li>
+              <li><a class="footer-link" href="#">Development</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Who are we</a></li>
+              <li><a class="footer-link" href="#">Mission</a></li>
+              <li><a class="footer-link" href="#">Vision</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
